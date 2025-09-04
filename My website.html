@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalpesh Desle - Coming Soon</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover fixed;
+      color: white;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.65);
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .content-wrapper {
+      position: relative;
+      z-index: 10;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .glass {
+      background: rgba(30, 41, 59, 0.5);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 1.25rem;
+      border: 1px solid rgba(255,255,255,0.13);
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      max-width: 500px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .animated-gradient {
+      background: linear-gradient(270deg,#60a5fa,#a78bfa,#60a5fa);
+      background-size: 600% 600%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 8s ease infinite;
+      font-weight: 700;
+      transition: color .3s;
+    }
+    @keyframes gradientShift {
+      0% {background-position:0% 50%;}
+      50% {background-position:100% 50%;}
+      100% {background-position:0% 50%;}
+    }
+    .motivate-text {
+      color: #b5e0fe;
+      font-size: 1.125rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+    .social-hover {
+      transition: transform 0.3s, color 0.3s;
+      color: #b0b0b0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      margin-left: 0.333em;
+      margin-right: 0.333em;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+    }
+    .social-hover:hover {
+      transform: scale(1.13) translateY(-2px);
+      color: #60a5fa;
+      background: rgba(96,165,250,0.18);
+      box-shadow: 0 0 12px #60a5fa88;
+    }
+    form.subscribe-form {
+      margin-top: 2.2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+    form input[type=email] {
+      padding: 0.8rem 1rem;
+      border-radius: 9999px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      min-width: 220px;
+      max-width: 300px;
+      background: rgba(255,255,255,0.11);
+      color: #fff;
+    }
+    form input[type=email]:focus {
+      background: rgba(255,255,255,0.22);
+    }
+    form button {
+      background-color: #60a5fa;
+      border-radius: 9999px;
+      color: white;
+      font-weight: 600;
+      padding: 0.7rem 1.4rem;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 14px #60a5fa88;
+    }
+    form button:hover {
+      background-color: #3b82f6;
+      box-shadow: 0 6px 20px #3b82f6cc;
+    }
+    .privacy-policy {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: #a0aec0;
+    }
+    .privacy-policy a {
+      color: #60a5fa;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+    .privacy-policy a:hover {
+      color: #a78bfa;
+    }
+    @media (max-width:700px) {
+      form.subscribe-form {
+        flex-direction: column;
+        align-items: center;
+      }
+      form input[type=email] {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content-wrapper fade-in">
+    <h1 class="text-4xl md:text-7xl font-bold tracking-wider mb-10" style="text-shadow:0 0 20px #ffffff19;">
+      MY PORTFOLIO
+    </h1>
+    <div class="glass">
+      <h2 class="text-3xl md:text-5xl font-light mb-1 leading-tight">
+        Something is
+        <span class="animated-gradient">Coming Soon</span>
+      </h2>
+      <p class="motivate-text">Get ready! Exciting things are coming your way.!</p>
+    </div>
+    <form class="subscribe-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST" aria-label="Subscribe Form" onsubmit="return showAlert()">
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Your email address" 
+        required 
+        aria-required="true" 
+        aria-label="Email Address"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />
+      <button type="submit" aria-label="Notify Me">Notify Me</button>
+      <input type="text" name="_gotcha" style="display:none" />
+    </form>
+    <p class="privacy-policy">
+      By subscribing, you agree to our <a href="https://yourwebsite.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+      .
+    </p>
+    <p style="font-size: 0.98rem; color:#b5e0fe; margin-top: 0.7em; opacity:0.68;">
+      Get launch updates delivered directly to your inbox.
+    </p>
+    <div style="margin: 2.5rem 0 0.5rem 0;">
+      <a href="https://www.linkedin.com/in/kalpesh-desle-6a2120212/" class="social-hover" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+      <a href="#" class="social-hover" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+    </div>
+    <p class="text-gray-400 text-sm" style="margin-top: 1.2em; user-select: none;">
+      © 2025 kalpesh.d. All rights reserved.
+    </p>
+  </div>
+  <script>
+    function showAlert() {
+      alert("Thanks for subscribing! we'll notify you when page are live.");
+      return true; // Allow form submit
+    }
+  </script>
+</body>
+</html>
